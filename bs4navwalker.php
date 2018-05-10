@@ -81,7 +81,7 @@ class bs4Navwalker extends Walker_Nav_Menu
             $class_names .= ' dropdown';
         }
 
-        if (in_array('current-menu-item', $classes)) {
+        if (in_array('current-menu-item', $classes) || in_array('current-menu-parent', $classes) ) {
             $class_names .= ' active';
         }
         //
